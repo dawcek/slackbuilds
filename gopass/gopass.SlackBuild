@@ -93,8 +93,8 @@ then
 fi
 if [ -n "$(cat /etc/shells | grep fish)" ] ;
 then
-	mkdir -p $PKG/usr/share/fish/vendor_completions.d/
-	cp $TMP/$PRGNAM-$VERSION/src/$DOMAIN/$ORG/$PRGNAM/fish.completion  $PKG/usr/share/fish/vendor_completions.d/gopass.fish
+	mkdir -p $PKG/usr/share/fish/completions/
+	cp $TMP/$PRGNAM-$VERSION/src/$DOMAIN/$ORG/$PRGNAM/fish.completion  $PKG/usr/share/fish/completions/gopass.fish
 	echo "Added fish completion file"
 fi
 
